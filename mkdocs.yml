@@ -1,0 +1,85 @@
+site_name: El Origen del Conocimiento
+site_description: >-
+  Arquitectura de Datos para Sistemas RAG — Antes del Prompt.
+  El método completo para construir la base de conocimiento que alimenta a la IA:
+  dominios, Bronce, Silver, Gold, validación y mantenimiento.
+site_author: Javier Frauca & ZCode
+repo_url: https://github.com/JavierFrauca/el-origen-del-conocimiento
+repo_name: JavierFrauca/el-origen-del-conocimiento
+edit_uri: ""
+
+docs_dir: book
+copyright: CC BY-NC-SA 4.0 — Javier Frauca & ZCode
+
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: slate
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo claro
+    - scheme: default
+      primary: deep orange
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo oscuro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - content.code.copy
+    - content.tabs.link
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight
+
+nav:
+  - Inicio: index.md
+  - Prólogo: 00-prologo.md
+  - "I · Cimientos":
+      - "1 · La cadena de suministro del conocimiento": 01-cadena-de-suministro-del-conocimiento.md
+      - "2 · Acotar para dominar": 02-acotar-para-dominar-domain-scoping.md
+      - "3 · Mapeo de fuentes y linaje": 03-mapeo-de-fuentes-y-linaje.md
+  - "II · Bronce":
+      - "4 · La zona cruda": 04-zona-cruda-ingesta-inmutable.md
+      - "5 · El manifiesto de datos": 05-manifiesto-de-datos.md
+  - "III · Hacia Silver":
+      - "6 · Normalización y OCR": 06-normalizacion-canonica-y-ocr.md
+      - "7 · El arte del curado": 07-el-arte-del-curado.md
+      - "8 · Segmentación temática": 08-segmentacion-tematica-documentos.md
+      - "9 · Clasificación facetada": 09-clasificacion-facetada-etiquetado.md
+  - "IV · Silver semántico":
+      - "10 · Chunking contextual": 10-chunking-semantico-contextual.md
+      - "11 · Tablas atómicas": 11-tablas-unidades-atomicas.md
+      - "12 · El doble campo": 12-estrategia-del-doble-campo.md
+  - "V · Gold":
+      - "13 · Auditoría de coherencia": 13-auditoria-coherencia-silver.md
+      - "14 · Síntesis de conocimiento": 14-sintesis-de-conocimiento.md
+      - "15 · Ingesta del Gold": 15-ingesta-del-gold.md
+  - "VI · Gobierno":
+      - "16 · El dataset áureo": 16-dataset-aureo-validacion.md
+      - "17 · La prueba de aceptación": 17-prueba-de-aceptacion.md
+      - "18 · Ciclo de vida y regresión": 18-ciclo-de-vida-regresion.md
+      - "19 · El corpus maestro, el activo oro": 19-corpus-maestro-activo-oro.md
+      - "20 · Mantener al día": 20-mantener-al-dia-alimentar-sin-ensuciar.md
+      - "21 · El coste del conocimiento": 21-coste-del-conocimiento.md
+      - "22 · El pipeline repetible": 22-como-hacer-todo-pipeline-repetible.md
+      - "23 · Notas y referencias": 23-de-donde-venimos-notas-y-referencias.md
+  - Epílogo: 24-epilogo.md
+  - Apéndices A-D: 25-apendices.md
+  - Glosario (Apéndice E): 26-glosario.md
+  - Créditos: 27-creditos.md
+
